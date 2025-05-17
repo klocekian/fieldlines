@@ -1,0 +1,155 @@
+https://www.oneusefulthing.org/p/15-times-to-use-ai-and-5-not-to
+
+### [**Ethan Mollick**](https://substack.com/@oneusefulthing)
+
+### Quantity (likely also some amount of diversity)
+
+Work that requires **quantity**. For example, the number of ideas you generate determines the quality of the best idea. You want to generate a lot of ideas in any brainstorming session. Most people stop after generating just a few ideas because they become exhausted but, the AI can provide hundreds that do not meaningfully repeat.
+
+> Generate 20 perspectives around [topic]. Make them diverse and cover a wide range.
+> 
+
+actual example
+
+> Generate 20 perspectives around therapy. Make them diverse and cover a wide range.
+> 
+
+### Complicated and exacting work
+
+Work where **you are an expert** and can assess quickly whether AI is good or bad. This can involve complicated and exacting work, but it relies on your expertise to determine whether the AI is providing valuable outputs. For example, o1, the new AI model from OpenAI, can solve some PhD-level problems, but it can be hard to know whether its answers are useful without being an expert yourself.
+
+> You’re an expert in [topic]. You’re helping another expert in that topic explore [deep question, idea]. Reason out [elements that are important to explore]. Show your work. Check outcomes to ensure the reasoning is sound.
+> 
+
+actual example
+
+> You’re an expert in AI. You’re helping another expert in that topic explore quality limits of generative outputs. Reason out how to make generative writing specific and nuanced rather than the often generic writing which LLMs usually generate. Show your work. Check outcomes to ensure the reasoning is sound.
+> 
+
+### Summary
+
+Work that involves summarizing large amounts of information, but **where the downside of errors is low**, and you are **not expected to have detailed knowledge of the underlying information**. AI is good at summarizing novel-length work, but less successful at fact-checking it.
+
+> Summarize this [PDF, link, following document]. List the overall thesis, main themes and arguments, and conclusions.
+> 
+
+### Derivative works
+
+Work that is mere translation between frames or perspectives. For example, you have developed a policy but now have to turn it into a dozen different training documents for different audiences in your organization. AI is very good at this sort of translation, increasing and decreasing complexity of documents so that people can understand them.
+
+> Use the [attached doc, following text] as your source document. Generate a [type of document; blog post/script/mock interview/study guide
+> 
+
+### Break writer’s block
+
+Work that will keep you moving forward. Little things often block our way, and a push might be all we need to accomplish it. When writing prior to AI, I might get stuck on a sentence and walk away from writing for an hour, but now I ask AI *give me thirty distinct ways to end this sentence*
+
+> *Give me 10 distinct ways to end this sentence:*
+> 
+
+### Lending expertise
+
+Work where you know that **AI is better than the Best Available Human that you can access**, and where the failure modes of AI will not result in worse outcomes if it gets something wrong.
+
+> You’re an expert in [topic]. Explain [aspect of topic] to me. Give me a high level understanding. Alert me to aspects of your explanation which I should check with a human expert.
+> 
+
+example prompt
+
+> You’re an expert doctor. Explain pulled hamstrings to me. Give me a high level understanding. Alert me to aspects of your explanation which I should check with a human expert.
+> 
+
+### Collaborative understanding
+
+Work that contains some elements that you can understand but need help on the context or details. Tyler Cowen suggests using the AI as a companion when reading, because it allows you to ask infinite questions.
+
+> Does [x observation] mean [y conjecture]?
+> 
+
+or
+
+> I have a hypothesis [of x]. Help me explore what might disprove it.
+> 
+
+actual example
+
+> Does the underlying probabilistic nature of LLMs mean we're more likely to see a standard distribution or a power law distribution?
+> 
+
+### Variance generation
+
+Work where you need variance, and where you will select the best answer as an editor or curator. Asking for a variety of solutions - *give me 15 ways to rewrite this bullet in radically different styles, be creative* allows you to find ideas that might be interesting.
+
+> *give me 15 ways to rewrite this bullet in radically different styles, be creative*
+> 
+
+### Coding
+
+Work that research shows that AI is almost certainly helpful in - [many kinds of coding](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4945566), for example.
+
+[no examples]
+
+### Red teaming
+
+Work where you need a first pass view at what a hostile, friendly, or naive recipient might think.
+
+> Review the following text. Explain how each of the following types of readers (hostile, friend, naive, expert) might summarize their opinion of what was written.
+> 
+
+### Collaborator
+
+Work that is entrepreneurial, where you are expected to stretch your expertise widely over many different disciplines, and where the alternative to a good-enough partner is to not be able to act at all. AI can be a surprisingly competent co-founder, helping give mentorship while also acting to build the documents, demos, and approaches that are otherwise likely to be outside your experience.
+
+> 
+> 
+
+### Pre-game reactions
+
+Work where you need a specific perspective, and where a simulated first pass from that perspective can be helpful, like reactions from fictional personas.
+
+> Review the following document.
+> 
+
+Work that is mere ritual, long severed from its purpose (like certain standardized reports that no one reads). What, [in the words of Bob Sutton and Huggy Rao](https://hbr.org/2024/01/rid-your-organization-of-obstacles-that-infuriate-everyone), scatters your attention and makes you less valuable? What work serves no useful purpose? In an ideal world, you would remove the work, but you can at least reduce its hold on you by having AI help. (Though make sure this is indeed the case, far too many people automate performance reviews, for example, which are meaningful only when done by a human)
+
+Work where you want a second opinion. Give an AI access to the data and see if reaches the same conclusion.
+
+Work that AIs can do better than humans. [This is likely to be the fastest-growing category.](https://www.oneusefulthing.org/p/the-present-future-ais-impact-long)
+
+# New
+
+### Information extractions
+
+Work that is time consuming or tedious. Such as reviewing a book or a document looking for categories of content; questions, facts, people, places, etc. Items in unstructured data that you’d like to have made into a list.
+
+> Review the [attached PDF]. Look through it and extract out all the [questions, people’s names, geographic locations. Generate a list of all items.
+> 
+
+or
+
+> Please review the following interview transcript and highlight answers to any of the following questions. Only pull out answers that match the questions below.
+Problem Definition
+> 
+> 
+> What was the problem you were looking to solve? 
+> How did you identify this problem and determine it was important to solve?
+> Were there any different perspectives across your team or from stakeholders that you considered or incorporated while tackling the problem?
+> What outcome were you looking for in a release and successful landing of this project? Were there any specific success metrics you were targeting?
+> 
+
+### Editorial evaluations
+
+Work that requires stepping back from authorship and asking wider editorial questions.
+
+> Review the following text and identify and create a comprehensive list of: internal inconsistencies, unsubstantiated assertions, generalizations that need specifics.
+> 
+
+or a more robust version:
+
+> Please review the attached document thoroughly and compile a detailed list addressing the following: Internal Inconsistencies: Highlight any contradictions, discrepancies, or conflicts within the text. Unsubstantiated Assertions: Identify claims or statements that lack supporting evidence, references, or adequate explanation. Generalizations Requiring Specifics: Point out broad or vague statements that need clarification, additional detail, or concrete examples.
+Ensure the feedback is organized and precise to facilitate targeted revisions.
+> 
+
+### Interviewer
+
+Work where you have the ideas inside you, but are struggling to get started with expressing them. Have AI interview you about the topic, you can even feed it a script or questions so that you’re responding like you’re on a panel. For extra effect you can use it in voice mode and it will transcribe your answers.
