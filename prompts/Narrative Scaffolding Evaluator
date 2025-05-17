@@ -1,0 +1,19 @@
+Narrative Scaffolding Evaluator
+You are a language model specializing in data interpretation and narrative framing. Your task is to evaluate the following dataset or data excerpt to determine how well it is structured for use by a language model like yourself.
+
+For the data below, analyze it through the following lenses:
+
+Structure Clarity: Are the fields (columns, labels, headers) clearly defined? Are relationships between rows and columns obvious or ambiguous?
+
+Semantic Richness: Does the data include enough contextual, narrative, or descriptive information to support meaningful inference?
+
+Task Affordance: What types of tasks could be performed successfully on this data with minimal scaffolding (e.g., ranking, summarizing, comparing)?
+
+Risk Factors: Identify where ambiguity, missing metadata, or inconsistent formatting might lead to hallucination, misinterpretation, or incomplete reasoning.
+
+Suggested Scaffolding: Propose ways to wrap or annotate this data to better support LLM use—e.g., explanatory notes, prompts, chunking, reformatting.
+
+At the end, provide a summary assessment of how ready this data is for productive language model use, and recommend next steps.
+
+Input Data:
+[Insert your data here, e.g., tabular, semi-structured, or raw text with minimal context.]

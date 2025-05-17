@@ -1,0 +1,73 @@
+🧠 Cognitive Load Evaluation Prompt
+You are an evaluator tasked with analyzing a single document, screenshot, or text thread to identify and score cognitive load challenges embedded within it. Your goal is to surface both explicit and implied indicators of cognitive strain across three domains:
+
+I. Core Load Dimensions (Structural Constraints)
+Working Memory: Holding/manipulating limited chunks of info; overload causes dropped threads.
+
+Attentional Bandwidth: Serial focus; switches are costly, especially under interruptions.
+
+Metabolic Cost: Mental effort consumes energy and leads to fatigue or degraded judgment.
+
+Emotional Regulation: Affective strain from risk, uncertainty, or fear must be managed in parallel with cognition.
+
+Integration Rhythms: Lack of rest, reflection, or narrative prevents consolidation and clarity.
+
+Cognitive Load Typology: Intrinsic (task complexity), extraneous (bad design), germane (learning effort).
+
+Rhythmicity & Entrainment: Humans operate in cycles—performance suffers when unsynced.
+
+II. Situational Load Amplifiers (Contextual Stressors)
+Social-Psychological Load: Status, impression management, stereotype threat, belonging uncertainty, fear of rejection, trust deficit.
+
+Risk & Ambiguity: Uncertain outcomes, irreversible consequences, high stakes, moral conflicts, unclear authority.
+
+Stressors & Energetic Constraints: Burnout, emotional contagion, urgency, physical discomfort, sleep misalignment.
+
+Environmental and Interface Mismatches: Bad UI, misaligned KPIs, high interruption rates, noise.
+
+Systemic Traps: Catch-22s, feedback opacity, hierarchical misalignment, learned helplessness.
+
+III. Translation Frictions (Cognitive Work Surfaces)
+Cross-Medium Translation: Text ↔ image, speech ↔ diagram, sensory ↔ symbolic.
+
+Abstraction Ladder Work: Concrete ↔ abstract, tactical ↔ strategic, instance ↔ principle.
+
+Domain Transfer: Jargon, interdisciplinary friction, poor analogies, cultural mismatches.
+
+Epistemic Labor: Reconstructing intent, reframing, triangulating truth, schema diagnosis.
+
+Temporal Translation: Past ↔ present integration, future simulation, long-term consequence reasoning.
+
+🔍 For Each Identified Load Instance, Provide:
+Load Type: [From the list above]
+Evidence: [Quote or summarize relevant content]
+Explanation: [Why it qualifies as a cognitive load instance]
+Explicit or Implied: [Mark as "Explicit" or "Implied"]
+Severity (0–3):
+
+Not present = Not present
+
+Mild = Mild (not disruptive)
+
+Moderate = Moderate (disruptive under load)
+
+Severe = Severe (clearly impairs cognition or action)
+Persistence (1–3):
+
+Momentary = Momentary
+
+Recurring/Situational = Recurring or situational
+
+Chronic/Systemic = Chronic or systemic
+
+Surface Type: [Core Load, Situational Amplifier, or Translation Friction]
+
+🧾 Output Format Example:
+
+Load Type: Attentional Bandwidth  
+- Evidence: “I kept switching between tabs to find the right file while trying to stay on the call.”  
+- Explanation: This indicates costly task-switching that increases reorientation overhead.  
+- Explicit or Implied: Implied  
+- Severity: Mild
+- Persistence: Momentary
+- Surface Type: Core Load
