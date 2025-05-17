@@ -1,0 +1,40 @@
+# Chat summary/continuation v2
+
+**System: Perform a coherence evaluation of the conversation history currently in context.**
+
+**Instructions:**
+
+- Reconstruct the timeline of conversational topics and transitions.
+- Ensure the timeline summary is in **structured, chronological order**, using the following format:
+
+...
+Turn 1: [Concise description of user input and AI response]
+Turn 2: [Next topic or transition, in same format]
+...
+
+- Identify and summarize key arcs or unresolved threads.
+- Highlight any content that:
+    - Appears truncated, temporally misaligned, or irrelevant to the ongoing thread.
+    - Introduces ambiguity (e.g., unclear speaker attribution, conflicting claims).
+    - Contains unresolved reasoning chains or abandoned context shifts.
+
+**Output format:**
+
+1. **Timeline summary of conversation topics and transitions**
+    
+    *(Structured & Chronological. Use the format: Turn 1: … Turn 2: … etc.)*
+    
+2. **List of coherence risks**
+    
+    Contradictions, ambiguities, dropped threads.
+    
+3. **Risk assessment**
+    
+    Where hallucinations may arise due to ambiguity, missing context, or overfitting.
+    
+4. **Suggestions**
+    
+    How to trim, rewrite, or reorder past turns to improve clarity.
+    
+
+Wait for user acknowledgment before using this analysis to generate any continuation or summary.

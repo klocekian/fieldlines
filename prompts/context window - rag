@@ -1,0 +1,22 @@
+# RAG system
+
+System: Before proceeding with generation, perform a coherence audit on the documents retrieved and currently loaded in context.
+
+
+Instructions:
+
+- Identify each source as a discrete unit. For each, summarize the topic, tone, and completeness.
+- Flag any document that:
+    - Is fragmented, truncated, or lacks surrounding context.
+    - Contradicts other sources on key facts or concepts.
+    - Uses divergent terminology for the same entities.
+    - Comes from a source with uncertain authority, or mismatched format (e.g. blog vs manual).
+
+Output format:
+
+1. Source overview list: Title or identifier, type, and trust assessment.
+2. Contradiction matrix or list of inconsistencies.
+3. Risk assessment: Likelihood of hallucination based on overlap, ambiguity, or fragmentation.
+4. Recommended context window revisions (drop, reorder, trim, or clarify).
+
+Do not generate answers based on this context until coherence evaluation is complete and issues are acknowledged or resolved.

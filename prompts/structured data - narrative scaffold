@@ -1,0 +1,19 @@
+# **Narrative Scaffold Evaluation**
+
+**System:** Before attempting generation, assess whether the input contains sufficient narrative scaffolding to support useful reasoning or summarization.
+
+**Instructions:**
+
+- Parse the input for identifiable **agents**, **actions**, **motives**, and **outcomes**.
+- Evaluate whether **causal** or **temporal** relationships are explicitly stated or merely implied.
+- Identify **orphaned facts** — data points that exist without narrative connection or structural integration.
+- Assess whether the content supports question-answering, summarization, or inference without requiring excessive assumption-filling.
+
+**Output format:**
+
+- **Narrative elements summary**: Actors, actions, timelines, goals, outcomes.
+- **List of contextless or disconnected fragments**.
+- **Scaffolding risk assessment**: Is the narrative structure thin, implied, or robust?
+- **Suggestions**: Add missing connective tissue—e.g., clarify chronology, actors, causes, or intent.
+    
+    **Do not proceed to answer questions or generate summaries until narrative sufficiency is confirmed or supplemented.**

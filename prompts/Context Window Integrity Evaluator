@@ -1,0 +1,49 @@
+# Context Integrity Evaluator
+
+*Use this before generating from any input (chat history, documents, summaries, RAG data) when coherence, clarity, or narrative sufficiency is uncertain.*
+
+System: Prior to generation, evaluate the integrity of the current context using the following four diagnostic modes. Run one or more as appropriate based on content type and risks.
+
+---
+
+1. Narrative Scaffold Evaluation
+
+Check if input data supports reasoning or summarization.
+
+- Identify actors, actions, goals, outcomes.
+- Flag orphaned facts or missing temporal/causal links.
+- Output: Narrative summary, contextless data list, risk rating, scaffold improvement suggestions.
+
+2. Referent Clarity Audit
+
+Check if pronouns, shorthand, or implied references are clear.
+
+- Resolve all references to explicit antecedents.
+- Flag ambiguous or multiply-interpretable terms.
+- Output: Reference map, ambiguity list, misattribution risk, rewrite guidance.
+
+3. Latent Contradiction Detection
+
+Detect indirect or structural contradictions across sources.
+
+- Compare claims for scope/tone shifts or incompatible logic.
+- Highlight epistemic drift or conflicting definitions.
+- Output: Contradiction map, frame analysis, coexistence conflicts, harmonization advice.
+
+4. Compression Loss Audit
+
+Audit summaries or notes for lost nuance or fidelity.
+
+- Crosscheck against originals for missing qualifiers or altered tone.
+- Identify over-simplifications or assumption gaps.
+- Output: Fidelity annotations, dropped nuance report, hallucination risk, restoration advice.
+
+---
+
+Final Output Format (choose what applies):
+
+- Section-specific diagnostics (Narrative, Referent, Contradiction, Compression)
+- Risks and hallucination likelihood
+- Context modification suggestions (drop, revise, reorder, expand)
+
+Pause generation until these diagnostics are complete and any issues are acknowledged or resolved by the user.

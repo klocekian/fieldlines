@@ -1,0 +1,669 @@
+artifact samples
+
+## 🔥 Analytical Visualizations (via Advanced Data Analysis)
+
+### 1. **Heatmap**
+
+- **Prompt:** "Create a heatmap showing the correlation between variables in the dataset."([docs.mermaidchart.com](https://docs.mermaidchart.com/blog/posts/mermaid-chart-chatgpt-plugin-combines-generative-ai-and-smart-diagramming?utm_source=chatgpt.com))
+- **Example Output:** A heatmap visualizing the correlation matrix, highlighting strong positive and negative correlations.
+
+### 2. **Bar Chart**
+
+- **Prompt:** "Generate a bar chart displaying total sales per region."
+- **Example Output:** A bar chart with regions on the x-axis and total sales on the y-axis, illustrating comparative sales performance.
+
+### 3. **Line Chart**
+
+- **Prompt:** "Plot a line chart of monthly website traffic over the past year."
+- **Example Output:** A line chart showing the trend of website visits month by month.
+
+### 4. **Pie Chart**
+
+- **Prompt:** "Create a pie chart representing market share by company."
+- **Example Output:** A pie chart dividing the market share among different companies.
+
+### 5. **Scatter Plot**
+
+- **Prompt:** "Generate a scatter plot of advertising spend vs. revenue."
+- **Example Output:** A scatter plot illustrating the relationship between advertising spend and revenue.
+
+### 6. **Box Plot**
+
+- **Prompt:** "Create a box plot to show the distribution of customer satisfaction scores."
+- **Example Output:** A box plot highlighting the median, quartiles, and outliers of satisfaction scores.
+
+### 7. **Histogram**
+
+- **Prompt:** "Plot a histogram of product prices."
+- **Example Output:** A histogram displaying the frequency distribution of product prices.
+
+### 8. **Area Chart**
+
+- **Prompt:** "Generate an area chart of cumulative sales over time."
+- **Example Output:** An area chart showing the accumulation of sales across a specified time period.
+
+### 9. **Treemap**
+
+- **Prompt:** "Create a treemap showing sales by product category."([kleiber.me – Ingo Kleiber](https://kleiber.me/blog/2024/03/24/quick-tip-mermaid/?utm_source=chatgpt.com))
+- **Example Output:** A treemap visualizing sales distribution across different product categories.([MachineLearningMastery.com](https://machinelearningmastery.com/generating-graphics-with-chatgpt/?utm_source=chatgpt.com))
+
+### 10. **Sunburst Chart**
+
+- **Prompt:** "Generate a sunburst chart of website navigation paths."
+- **Example Output:** A sunburst chart illustrating the hierarchy of user navigation through the website.
+
+---
+
+## 📐 Structural Diagrams (via Mermaid Syntax)
+
+### 11. **Flowchart**
+
+- **Prompt:** "Create a flowchart of the user registration process."
+- **Example Output:**
+
+```mermaid
+flowchart TD
+    Start --> InputDetails
+    InputDetails --> SubmitForm
+    SubmitForm --> Verification
+    Verification --> AccountCreated
+
+```
+
+### 12. **Sequence Diagram**
+
+- **Prompt:** "Generate a sequence diagram for the login process."
+- **Example Output:**
+
+```mermaid
+sequenceDiagram
+    User->>Server: Enter credentials
+    Server->>Database: Validate credentials
+    Database-->>Server: Return result
+    Server-->>User: Access granted
+
+```
+
+### 13. **Class Diagram**
+
+- **Prompt:** "Create a class diagram for a library management system."
+- **Example Output:**
+
+```mermaid
+classDiagram
+    class Book {
+        -String title
+        -String author
+        -int ISBN
+        +getDetails()
+    }
+    class Member {
+        -String name
+        -int memberId
+        +borrowBook()
+        +returnBook()
+    }
+    Book "1" --> "*" Member : borrowed by
+
+```
+
+### 14. **State Diagram**
+
+- **Prompt:** "Generate a state diagram for order processing."
+- **Example Output:**
+
+```mermaid
+stateDiagram-v2
+    [*] --> OrderPlaced
+    OrderPlaced --> PaymentProcessed
+    PaymentProcessed --> Shipped
+    Shipped --> Delivered
+    Delivered --> [*]
+
+```
+
+### 15. **Gantt Chart**
+
+- **Prompt:** "Create a Gantt chart for the project timeline."([Medium](https://medium.com/%40martin-jurran/chatgpt-prompt-list-for-software-engineers-prompts-to-generate-software-diagrams-in-mermaid-deaf2f373104?utm_source=chatgpt.com))
+- **Example Output:**
+
+```mermaid
+gantt
+    title Project Timeline
+    dateFormat  YYYY-MM-DD
+    section Planning
+    Requirements :a1, 2025-05-01, 7d
+    Design       :a2, after a1, 10d
+    section Development
+    Implementation :a3, after a2, 15d
+    Testing        :a4, after a3, 5d
+    section Deployment
+    Release :a5, after a4, 2d
+
+```
+
+### 16. **Mind Map**
+
+- **Prompt:** "Generate a mind map of digital marketing strategies."
+- **Example Output:**
+
+```mermaid
+mindmap
+  root((Digital Marketing))
+    SEO
+      On-page
+      Off-page
+    Content Marketing
+      Blogs
+      Videos
+    Social Media
+      Facebook
+      Twitter
+    Email Marketing
+
+```
+
+### 17. **Entity-Relationship Diagram**
+
+- **Prompt:** "Create an ER diagram for a university database."
+- **Example Output:**
+
+```mermaid
+erDiagram
+    STUDENT ||--o{ ENROLLMENT : enrolls
+    COURSE ||--o{ ENROLLMENT : includes
+    STUDENT {
+        int student_id
+        string name
+    }
+    COURSE {
+        int course_id
+        string title
+    }
+    ENROLLMENT {
+        int enrollment_id
+        date enrollment_date
+    }
+
+```
+
+---
+
+These examples demonstrate the range of visual artifacts you can generate within ChatGPT using ADA and Mermaid syntax. You can further customize these diagrams and charts by modifying the prompts to fit your specific needs.
+
+If you have a particular use case or need assistance in crafting prompts for a specific visualization, feel free to ask!
+
+### 🔍 Additional Analytical Visualizations
+
+**18. Violin Plot**
+
+- **Prompt:** "Create a violin plot of customer review scores by product category."
+- **Example Output:** A combination of box plot and kernel density estimate, showing distribution shape.
+
+**19. Bubble Chart**
+
+- **Prompt:** "Generate a bubble chart of revenue by region and product category."
+- **Example Output:** Bubbles sized by revenue, positioned by two other variables (e.g., region and product line).
+
+**20. Parallel Coordinates Plot**
+
+- **Prompt:** "Plot a parallel coordinates chart to compare multivariate customer metrics."
+- **Example Output:** Lines crossing axes for each variable to show multivariate patterns.
+
+**21. Pair Plot (Scatter Matrix)**
+
+- **Prompt:** "Generate a pair plot of numerical features in the dataset."
+- **Example Output:** Matrix of scatter plots to explore relationships between variable pairs.
+
+---
+
+### 🧭 Additional Structural Diagrams (Mermaid or markdown-supported)
+
+**22. Timeline**
+
+- **Prompt:** "Generate a project milestone timeline."
+- **Example Output:**
+
+```mermaid
+mermaid
+CopyEdit
+timeline
+    title Product Launch
+    2025-01-01 : Concept finalized
+    2025-02-15 : Prototype complete
+    2025-04-01 : Beta launch
+    2025-06-01 : Full release
+
+```
+
+**23. Org Chart**
+
+- **Prompt:** "Create an org chart of the engineering department."
+- **Example Output:** *(via markdown tables or custom diagramming plugins—Mermaid lacks native org chart)*
+
+**24. Decision Tree**
+
+- **Prompt:** "Create a decision tree for loan eligibility."
+- **Example Output:**
+
+```mermaid
+mermaid
+CopyEdit
+graph TD
+    A[Start] --> B{Credit Score > 700?}
+    B -->|Yes| C{Income > 50k?}
+    C -->|Yes| D[Approve Loan]
+    C -->|No| E[Reject Loan]
+    B -->|No| E
+
+```
+
+**25. Force-Directed Graph (Network Graph)**
+
+- **Prompt:** "Visualize relationships between departments in a network graph."
+- **Example Output:** While not natively supported via Mermaid, some environments support pseudo-syntax or can output adjacency matrices via ADA.
+
+### 18. **Violin Plot**
+
+- **Prompt:** "Create a violin plot of customer review scores by product category."
+- **Example Output:** A violin plot showing the distribution and density of review scores across different categories.
+
+### 19. **Bubble Chart**
+
+- **Prompt:** "Generate a bubble chart of revenue by region and product category."
+- **Example Output:** A scatter plot with bubbles sized by revenue, comparing categories and regions.
+
+### 20. **Parallel Coordinates Plot**
+
+- **Prompt:** "Plot a parallel coordinates chart to compare multivariate customer metrics."
+- **Example Output:** A multivariate line plot showing how multiple numeric variables vary across samples.
+
+### 21. **Pair Plot**
+
+- **Prompt:** "Generate a pair plot of numerical features in the dataset."
+- **Example Output:** A matrix of scatter plots showing all pairwise relationships between features.
+
+### 22. **Donut Chart**
+
+- **Prompt:** "Create a donut chart of expenses by category."
+- **Example Output:** A circular chart like a pie chart with a central cutout, showing proportions.
+
+### 23. **Funnel Chart**
+
+- **Prompt:** "Plot a funnel chart of leads through sales pipeline stages."
+- **Example Output:** A descending funnel visualization showing conversion rates at each stage.
+
+### 24. **Waterfall Chart**
+
+- **Prompt:** "Generate a waterfall chart of quarterly profit changes."
+- **Example Output:** A chart that accumulates sequential changes in profit, both gains and losses.
+
+### 25. **Radar Chart**
+
+- **Prompt:** "Create a radar chart of product scores by feature."
+- **Example Output:** A spider chart comparing products across several scored attributes.
+
+### 26. **Boxen Plot**
+
+- **Prompt:** "Make a boxen plot of income levels across job roles."
+- **Example Output:** An enhanced box plot with nested boxes showing data distribution more finely.
+
+### 27. **Sankey Diagram**
+
+- **Prompt:** "Generate a Sankey diagram of user paths on a website."
+- **Example Output:** A flow diagram with weighted paths showing volume from one node to another.
+
+### 28. **Chord Diagram**
+
+- **Prompt:** "Create a chord diagram of communication between departments."
+- **Example Output:** A circular relationship map showing the strength of connections between nodes.
+
+### 29. **Venn Diagram**
+
+- **Prompt:** "Create a Venn diagram of skills between marketing, sales, and product teams."
+- **Example Output:** Overlapping circles showing shared and unique skill sets.
+
+---
+
+## 📐 Additional Structural Diagrams (via Mermaid Syntax)
+
+### 30. **Timeline**
+
+- **Prompt:** "Generate a project milestone timeline."
+- **Example Output:**
+
+```mermaid
+mermaid
+CopyEdit
+timeline
+    title Project Launch
+    2025-01-01 : Concept finalized
+    2025-02-15 : Prototype complete
+    2025-04-01 : Beta launch
+    2025-06-01 : Full release
+
+```
+
+### 31. **Org Chart**
+
+- **Prompt:** "Create an org chart of the engineering department."
+- **Example Output:** Simulated with graph layout or table, representing hierarchy of roles.
+
+### 32. **Decision Tree**
+
+- **Prompt:** "Create a decision tree for loan eligibility."
+- **Example Output:**
+
+```mermaid
+mermaid
+CopyEdit
+graph TD
+    A[Start] --> B{Credit Score > 700?}
+    B -->|Yes| C{Income > 50k?}
+    C -->|Yes| D[Approve Loan]
+    C -->|No| E[Reject Loan]
+    B -->|No| E
+
+```
+
+### 33. **Swimlane Diagram**
+
+- **Prompt:** "Create a swimlane diagram for support ticket handling."
+- **Example Output:** Visualizing parallel responsibilities (e.g., Customer, Agent, System) across time.
+
+### 34. **Logic Flow**
+
+- **Prompt:** "Show decision logic for customer refund eligibility."
+- **Example Output:** Conditional nodes and branches representing rules and outcomes.
+
+### 35. **Hierarchical Tree**
+
+- **Prompt:** "Show a hierarchy of company roles in tree format."
+- **Example Output:** A tree-style `graph TD` or `mindmap` format showing role relationships.
+
+### 36. **Knowledge Graph**
+
+- **Prompt:** "Build a knowledge graph connecting concepts in AI ethics."
+- **Example Output:** A network-style graph where nodes represent concepts and edges represent relationships.
+
+---
+
+## 🧠 Hybrid Organizational & Informational Layouts
+
+### 37. **2x2 Matrix**
+
+- **Prompt:** "Plot a 2x2 matrix of impact vs. effort with example projects in each quadrant."
+- **Example Output:** A quadrant visualization categorizing items based on two axes.
+
+### 38. **Timeline Table**
+
+- **Prompt:** "Show a table of key product features with release dates and status."
+- **Example Output:** A markdown table with temporal rows and status indicators.
+
+### 39. **Table with Visual Encoding**
+
+- **Prompt:** "Display a table of campaign metrics with progress bars for performance."
+- **Example Output:** Markdown table including symbols or bars to show relative completion levels.
+
+### 🧱 Wireframe-like Artifacts ChatGPT Can Generate
+
+Here are some artifact types you can prompt for:
+
+---
+
+### 1. **Text-based Wireframe (UI Mockup in ASCII)**
+
+*Rough spatial layout of an interface*
+
+**Prompt:**
+
+> "Create a text wireframe for a mobile login screen"
+> 
+
+**Example Output:**
+
+```
++-----------------------------+
+|          Logo              |
+|---------------------------|
+|   [ Username           ]   |
+|   [ Password           ]   |
+|                           |
+|   ( ) Remember me         |
+|                           |
+|   [   Login Button     ]   |
+|---------------------------|
+|   Forgot password?        |
++-----------------------------+
+
+```
+
+---
+
+### 2. **Layout Grid (Section Map)**
+
+*Describes structure, hierarchy, or layout areas*
+
+**Prompt:**
+
+> "Generate a layout grid for a landing page with a hero, features, and footer"
+> 
+
+**Example Output:**
+
+```
+[ HERO ]
+|  Big headline
+|  CTA button
+---------------
+[ FEATURES ]
+|  - Feature 1
+|  - Feature 2
+|  - Feature 3
+---------------
+[ FOOTER ]
+|  - Links
+|  - Social
+
+```
+
+---
+
+### 3. **Markdown Table-based Layout**
+
+*Tabular wireframes for dashboards or planners*
+
+**Prompt:**
+
+> "Create a markdown layout for a sales dashboard"
+> 
+
+**Example Output:**
+
+```markdown
+| Metric          | Value     | Trend      |
+|-----------------|-----------|------------|
+| Total Sales     | $120,000  | 📈 +12%     |
+| New Customers   | 450       | 📉 -3%      |
+| Avg. Order Size | $265      | 📈 +4%      |
+
+```
+
+---
+
+### 4. **Mermaid Grid/Flow for Component Sketches**
+
+*Using Mermaid for UI states or nested blocks*
+
+**Prompt:**
+
+> "Use Mermaid to sketch layout of a modal dialog"
+> 
+
+```mermaid
+graph TD
+    A[Modal Container] --> B[Header]
+    A --> C[Body]
+    A --> D[Footer]
+    C --> E[Form Fields]
+    D --> F[Submit Button]
+
+```
+
+---
+
+Would you like me to generate a specific wireframe for your use case — e.g., onboarding flow, CRM dashboard, mobile settings page?
+
+Yes — in addition to text wireframes and layout grids, there are several other artifact types that ChatGPT can generate **to support UI/UX design and planning** — especially during early ideation, system sketching, or structural reasoning.
+
+Here’s a more **comprehensive list** of wireframe-adjacent or layout-focused artifacts that can be created in ChatGPT, categorized by format and function:
+
+---
+
+## 🧱 **Wireframe & Interface Structure Artifacts**
+
+### 1. **Text-based Wireframes (ASCII UI mockups)**
+
+*Blocky text representations of screens or components*
+
+- Login pages
+- Dashboards
+- Modals
+- Settings screens
+- Mobile app views
+
+### 2. **Markdown Grids or Cards**
+
+*Use markdown to simulate card-based UI or layout blocks*
+
+```markdown
+| 📈 Metric      | 📊 Chart       | ✅ Tasks       |
+|---------------|----------------|----------------|
+| $500k revenue | [Line graph]   | [✓] Item 1     |
+| +12% growth   | [Bar chart]    | [ ] Item 2     |
+
+```
+
+### 3. **Structured Lists for Layout Regions**
+
+*Use indented or nested lists to suggest page regions*
+
+```
+Page Layout:
+- Header
+  - Logo
+  - Navigation
+- Main
+  - Hero section
+  - Features
+  - Testimonials
+- Footer
+
+```
+
+### 4. **Mermaid Diagrams for UI Structure**
+
+*Use Mermaid to represent page/module/component structure*
+
+- `graph TD` for containers and regions
+- `mindmap` for feature hierarchy
+- `flowchart` for user interaction logic
+
+---
+
+## 📋 **Flow-Oriented UX Artifacts**
+
+### 5. **User Journey Maps (Textual or Mermaid)**
+
+*Sequential steps showing user actions and system states*
+
+**Prompt:**
+
+> "Create a user journey for first-time signup"
+> 
+
+```
+User -> Enters email -> Verifies email -> Completes profile -> Dashboard
+
+```
+
+### 6. **State Diagrams (Mermaid)**
+
+*Represent interface states and transitions*
+
+```mermaid
+stateDiagram-v2
+    [*] --> LoggedOut
+    LoggedOut --> LoggingIn
+    LoggingIn --> LoggedIn
+    LoggedIn --> [*]
+
+```
+
+### 7. **Click Flow Diagrams**
+
+*Textual map of clicks from page to page*
+
+```
+Home → Pricing → Signup → Confirmation
+         ↓
+      Contact Us → Submit Form
+
+```
+
+---
+
+## 📌 **Design System & Component Index Artifacts**
+
+### 8. **Component Inventory Table**
+
+*List of interface components, purpose, and status*
+
+```markdown
+| Component     | Use Case           | Status   |
+|---------------|--------------------|----------|
+| Button        | Submit forms       | ✅ Ready |
+| Modal         | User confirmation  | 🔧 WIP   |
+| Avatar        | Show user identity | ✅ Ready |
+
+```
+
+### 9. **Screen Matrix**
+
+*Pages vs. components — shows reuse and layout needs*
+
+```markdown
+| Screen        | Uses Modal | Uses Nav | Uses Form |
+|---------------|------------|----------|-----------|
+| Login         | No         | No       | Yes       |
+| Dashboard     | Yes        | Yes      | No        |
+
+```
+
+---
+
+## 📐 **Simulation of Visual Thinking Tools**
+
+### 10. **Whiteboard Grid / Idea Clusters**
+
+*Textual or markdown clustering of concepts spatially*
+
+```
+[Productivity]
+ ├─ Tasks
+ ├─ Calendar
+ └─ Notifications
+
+[Settings]
+ ├─ Profile
+ ├─ Billing
+ └─ Security
+
+```
+
+### 11. **Zettelkasten-style Note Map**
+
+*Knowledge architecture across linked topics*
+
+- `#Onboarding → #UserFriction → #ProgressiveDisclosure`
+- `#Dashboard → #InformationDensity → #CognitiveLoad`

@@ -1,0 +1,24 @@
+# Document summary
+
+System: Evaluate the structure and coherence of the document(s) loaded in the context window prior to answering questions or summarizing.
+
+
+Instructions:
+
+- Segment the document(s) by section, header, or logical boundaries.
+- For each segment:
+    - Check for completeness, context availability, and clarity of references.
+    - Note if it relies on missing figures, external footnotes, or implied knowledge.
+- Flag areas of the document that:
+    - Are out of order (e.g. conclusions before evidence).
+    - Use unclear references or pronouns with no antecedent.
+    - Conflict internally in logic, tone, or stated facts.
+
+Output format:
+
+1. Structural outline of document(s), with completeness check per section.
+2. Highlighted zones of hallucination risk (e.g. unlabeled tables, ambiguous summary statements).
+3. Conflicting or incoherent content areas.
+4. Guidance for restructuring context chunks to reduce misinterpretation.
+
+Pause generation until document coherence has been validated or confirmed by user.
