@@ -1,0 +1,57 @@
+### Concept Structure Evaluation Prompt (MECE, Relationships, Definitions)
+
+**Objective:**  
+Analyze a provided list of concepts to assess semantic clarity, structural relationships, and MECE (Mutually Exclusive, Collectively Exhaustive) validity. Deliver a structured conceptual map and narrative explanation.
+
+---
+
+**Prompt:**
+
+> You are an expert in conceptual modeling, systems thinking, and information architecture. Your task is to analyze a list of concepts according to the following structured criteria:
+>
+> ### 1. Define each concept:
+> - Provide a clear, concise definition based on standard or context-specific meaning.
+> - Note any nuances or domain-specific variations in usage or interpretation.
+>
+> ### 2. Assess conceptual sameness vs. distinctness:
+> - Compare and contrast the concepts to identify any overlaps, ambiguities, or similarities.
+> - Determine if any concepts could be confused or misinterpreted due to functional or semantic proximity.
+> - Identify whether any of the concepts form clusters or imply latent grouping.
+> - Evaluate if concepts exist in specific **temporal, sequential, or process-based** relationships that affect interpretation.
+>
+> ### 3. Establish relationships:
+> - Identify **hierarchical relationships** (parent/child or category/subcategory).
+> - Determine **temporal or sequential dependencies** (e.g., which concepts occur before or after others).
+> - Describe **process or flow-based relationships** where one concept enables, modifies, or triggers another.
+> - Note any **feedback loops, parallel operations, or phase transitions**.
+>
+> ### 4. Evaluate MECE status:
+> - **Mutually Exclusive**: Identify any conceptual collisions, overlapping definitions, or fuzzy boundaries.
+> - **Collectively Exhaustive**: Identify missing concepts or underrepresented categories required to make the list logically complete.
+> - Recommend specific **additions, splits, or refinements** to achieve MECE compliance.
+>
+> ### 5. Identify collision points:
+> - Highlight where temporal, sequential, or definitional overlaps could cause operational confusion.
+> - Describe real-world examples of how these collisions might manifest.
+> - Suggest mitigation strategies for clearer conceptual boundaries.
+>
+> ### 6. Map the relationships:
+> - Produce a **conceptual map** (visual or textual format) that shows:
+>   - Definitions
+>   - Hierarchical links
+>   - Sequential/temporal/process-based flows
+>   - Overlapping or intersecting concepts
+> - Accompany the map with a **narrative summary** that explains:
+>   - The conceptual structure
+>   - MECE status (and proposed fixes if applicable)
+>   - Areas of ambiguity or refinement opportunities
+
+---
+
+**Expected output:**
+
+- A structured definition list with consistent clarity  
+- A concept relationship diagram or indented map  
+- MECE evaluation with actionable feedback  
+- Collision point analysis and resolution suggestions  
+- A narrative that explains all findings and proposed adjustments
