@@ -1,0 +1,2 @@
+- **Prompt:** "Show a hierarchy of company roles in tree format."
+- **Example Output:** A tree-style `graph TD` or `mindmap` format showing role relationships.
