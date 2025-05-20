@@ -1,0 +1,14 @@
+*Use textual or markdown clustering of concepts spatially of the following information*
+
+```
+[Productivity]
+ ├─ Tasks
+ ├─ Calendar
+ └─ Notifications
+
+[Settings]
+ ├─ Profile
+ ├─ Billing
+ └─ Security
+
+```
