@@ -1,0 +1,12 @@
+- **Prompt:** "Generate a project milestone timeline."
+- **Example Output:**
+
+```mermaid
+mermaid
+CopyEdit
+timeline
+    title Product Launch
+    2025-01-01 : Concept finalized
+    2025-02-15 : Prototype complete
+    2025-04-01 : Beta launch
+    2025-06-01 : Full release
