@@ -1,0 +1,22 @@
+**Prompt:**
+
+> "Generate a layout grid for a landing page with a hero, features, and footer"
+> 
+
+**Example Output:**
+
+```
+[ HERO ]
+|  Big headline
+|  CTA button
+---------------
+[ FEATURES ]
+|  - Feature 1
+|  - Feature 2
+|  - Feature 3
+---------------
+[ FOOTER ]
+|  - Links
+|  - Social
+
+```
