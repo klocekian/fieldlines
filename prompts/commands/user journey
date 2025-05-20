@@ -1,0 +1,7 @@
+**Prompt:**
+
+> "Create a user journey for first-time signup"
+> 
+
+```
+User -> Enters email -> Verifies email -> Completes profile -> Dashboard
