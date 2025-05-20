@@ -1,0 +1,24 @@
+### 1. **Text-based Wireframe (UI Mockup in ASCII)**
+
+*Rough spatial layout of an interface*
+
+**Prompt:**
+
+> "Create a text wireframe for a mobile login screen"
+> 
+
+**Example Output:**
+
+```
++-----------------------------+
+|          Logo              |
+|---------------------------|
+|   [ Username           ]   |
+|   [ Password           ]   |
+|                           |
+|   ( ) Remember me         |
+|                           |
+|   [   Login Button     ]   |
+|---------------------------|
+|   Forgot password?        |
++-----------------------------+
