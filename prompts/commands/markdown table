@@ -1,0 +1,17 @@
+*Tabular wireframes for dashboards or planners*
+
+**Prompt:**
+
+> "Create a markdown layout for a sales dashboard"
+> 
+
+**Example Output:**
+
+```markdown
+| Metric          | Value     | Trend      |
+|-----------------|-----------|------------|
+| Total Sales     | $120,000  | 📈 +12%     |
+| New Customers   | 450       | 📉 -3%      |
+| Avg. Order Size | $265      | 📈 +4%      |
+
+```
