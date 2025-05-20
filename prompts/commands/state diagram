@@ -1,0 +1,10 @@
+- **Prompt:** "Generate a state diagram for [order processing]."
+- **Example Output:**
+
+```mermaid
+stateDiagram-v2
+    [*] --> OrderPlaced
+    OrderPlaced --> PaymentProcessed
+    PaymentProcessed --> Shipped
+    Shipped --> Delivered
+    Delivered --> [*]
