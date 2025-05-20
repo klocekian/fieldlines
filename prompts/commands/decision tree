@@ -1,0 +1,14 @@
+- **Prompt:** "Create a decision tree for loan eligibility."
+- **Example Output:**
+
+```mermaid
+mermaid
+CopyEdit
+graph TD
+    A[Start] --> B{Credit Score > 700?}
+    B -->|Yes| C{Income > 50k?}
+    C -->|Yes| D[Approve Loan]
+    C -->|No| E[Reject Loan]
+    B -->|No| E
+
+```
