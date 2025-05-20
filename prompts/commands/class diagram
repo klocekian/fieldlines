@@ -1,0 +1,18 @@
+- **Prompt:** "Create a class diagram for a library management system."
+- **Example Output:**
+
+```mermaid
+classDiagram
+    class Book {
+        -String title
+        -String author
+        -int ISBN
+        +getDetails()
+    }
+    class Member {
+        -String name
+        -int memberId
+        +borrowBook()
+        +returnBook()
+    }
+    Book "1" --> "*" Member : borrowed by
