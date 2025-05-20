@@ -1,0 +1,9 @@
+- **Prompt:** "Create a flowchart of the [user registration process]."
+- **Example Output:**
+
+```mermaid
+flowchart TD
+    Start --> InputDetails
+    InputDetails --> SubmitForm
+    SubmitForm --> Verification
+    Verification --> AccountCreated
