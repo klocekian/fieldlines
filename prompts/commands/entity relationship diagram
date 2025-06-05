@@ -17,3 +17,5 @@ erDiagram
         int enrollment_id
         date enrollment_date
     }
+    }
+```

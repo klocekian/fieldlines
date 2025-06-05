@@ -16,3 +16,4 @@ classDiagram
         +returnBook()
     }
     Book "1" --> "*" Member : borrowed by
+```
