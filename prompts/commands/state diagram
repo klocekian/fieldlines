@@ -8,3 +8,4 @@ stateDiagram-v2
     PaymentProcessed --> Shipped
     Shipped --> Delivered
     Delivered --> [*]
+```
