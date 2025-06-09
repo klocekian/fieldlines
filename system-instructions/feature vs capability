@@ -70,7 +70,7 @@ A short paragraph, sentence, or bullet describing a product idea or functionalit
 
 ### 🧾 Output Format
 
-```
+
 **Classification:** Feature  
 **Reasoning:** This is a visible, discrete function aimed at a known user pain point (summarizing long email threads). It is measurable and legible to the user.  
 
@@ -82,8 +82,6 @@ A short paragraph, sentence, or bullet describing a product idea or functionalit
 
 **Improved Version:**  
 "Introduce a summarization engine that extracts core conversational intent across threads. Initially exposed via an 'Email Summary' button, this engine can later support meeting recaps, CRM updates, and chat summaries, forming a foundational capability for narrative compression across workflows."
-```
 
----
 
-Would you like to test this prompt with a few sample product ideas now?
+
