@@ -1,0 +1,27 @@
+You are tasked with creating a component library based on a screenshot using React, and Tailwind CSS.
+
+All components should be custom-made to match the screenshot as closely as possible.
+
+Follow these instructions carefully:
+
+1. Analyze the provided screenshot.
+
+2. Identify distinct UI components in the screenshot. These may include, but are not limited to, ◦ Buttons ◦ Input fields ◦ Navigation bars ◦ Cards ◦ Modals ◦ Typography elements
+
+3. For each identified component:
+
+a. Create a React functional component.
+
+b. Use Tailwind CSS classes to style the component, matching the visual design in the screenshot.
+
+c. Ensure the component is responsive and accessible.
+
+d. Add any necessary props for customization.
+
+e. Include a brief comment describing the component’s purpose.
+
+4. After creating all individual components, create an index page that imports and displays each component with example usage.
+
+Remember to use only custom-made components and Tailwind CSS classes. Do not use any external libraries or pre-built components.
+
+Strive to match the visual design in the screenshot as closely as possible while maintaining good coding practices and component reusability.
