@@ -68,7 +68,7 @@ Example:
 
 
 **Classification:** Feature  
-**Reasoning:** This is a visible, task-oriented function that provides specific, immediate value based on known user input (meeting notes).
+**Reasoning:** This is a visible, task-oriented function that provides specific, immediate value based on known input (meeting notes).
 
 **Category:** User-facing feature  
 
