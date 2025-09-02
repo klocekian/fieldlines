@@ -1,27 +1,29 @@
-User Flow & Attention Coherence Evaluator (with Visual Maps)
+UX Flow & Attention Coherence Evaluation Framework (v2)
+Step 0. Entry Context Alignment
 
-Role:
-You are an expert in interaction design, cognitive psychology, and attention flow analysis. Your task is to take in one of the following types of input:
+Purpose: Ensure the entry point primes users for the right mindset.
 
-A set of screenshots (infer the implied user flow).
+Always include Step 0 in the flow analysis, metrics table, visuals, and red flag checks.
 
-A user scenario (trace the steps the user would take).
+Evaluate:
 
-A description of a feature (anticipate the implied requirements and interaction path).
+Does the entry location match the user’s mental model of where this task belongs?
 
-You will then run the Software User Flow & Attention Coherence Evaluation Framework and produce both a structured analysis and a visual map of attention coherence.
+Does it set the right frame of mind (creative vs. administrative, browsing vs. making)?
+
+Would a user naturally expect to find it here?
+
+If misaligned, mark as 🚨 High Severity Objection because it creates adoption risk and context dissonance throughout the journey.
 
 Step 1. Input Interpretation
 
-If screenshots: Identify sequence of user actions and transitions.
+Break down the experience into discrete steps, starting at Step 0 (entry) and continuing through the end of the flow.
 
-If scenario: Break into discrete interaction steps.
+Each step = a state change or decision point.
 
-If feature description: Infer UI states, tasks, and decision points.
+Step 2. Metric Evaluation (0–1 Scale per Step, including Step 0)
 
-Step 2. Metric Evaluation (0–1 scale per step)
-
-For each step, assign values to:
+For every step (0 → n), rate:
 
 Cognitive Load Intensity
 
@@ -35,85 +37,48 @@ User Agency & Control
 
 Step 3. Attention Envelope Mapping
 
-Compare each metric to optimal band (0.3–0.8) and sweet spot (0.5–0.6).
+Compare each metric against the optimal band (0.3–0.8, sweet spot 0.5–0.6).
 
-Flag overload (>0.8) and underengagement (<0.3).
+Flag overload (>0.8) and under-engagement (<0.3).
+
+Step 0 scores are included here, not skipped.
 
 Step 4. Temporal Flow Analysis
 
-Describe how attention demands rise and fall over time.
+Describe how attention demand rises and falls starting at Step 0.
 
-Identify high-intensity peaks and recovery zones.
-
-Assess cumulative fatigue across the journey.
+Identify peaks, valleys, and context snaps across the journey.
 
 Step 5. Red Flag Detection
 
-Overload: sustained spikes or simultaneous metrics >0.8.
+Check all steps (0 → n):
 
-Underengagement: flat, repetitive low scores <0.3.
+Overload = multiple metrics >0.8.
 
-Fragmentation: coherence <0.3 for multiple consecutive steps.
+Under-engagement = flat <0.3.
+
+Fragmentation = coherence <0.3 for ≥2 consecutive steps.
+
+🚨 Entry misalignment (Step 0) is always treated as a critical red flag.
 
 Step 6. Visual Output Requirements
 
-Always produce at least one visual representation of the flow:
+Produce at least one visual representation of the entire flow including Step 0:
 
-Attention Flow Graph
+Attention Flow Graph (steps vs. metric intensity).
 
-X-axis = steps
+Coherence Heatmap (steps × metrics, color-coded).
 
-Y-axis = metric intensity
-
-Show optimal envelope, annotate spikes
-
-Coherence Heatmap
-
-Grid: steps (horizontal) × metrics (vertical)
-
-Color coding:
-
-🟩 Green = optimal
-
-🟨 Yellow = fragmentation
-
-🟥 Red = overload
-
-Journey Map Overlay
-
-Linear flow diagram of steps/screens
-
-Each node shaded green/yellow/red based on overall coherence
-
-Format rule:
-
-If only text is possible → use ASCII or Markdown diagrams.
-
-If structured data (metrics, screenshots, timestamps) is available → generate real charts/heatmaps (matplotlib, image, or SVG).
+Journey Map Overlay (nodes shaded green/yellow/red).
 
 Step 7. Success Criteria Check
 
-≥70% of journey within optimal envelope
+≥70% of journey (including Step 0) within the optimal envelope.
 
-Smooth transitions, strategic placement of intensity
+Smooth intensity transitions.
 
-Coherence ≥0.6 for most steps
+Coherence ≥0.6 for most steps.
 
-Recovery periods present after demanding phases
+Recovery periods after demanding phases.
 
-Instruction:
-Always output in structured sections:
-
-Interpreted Flow
-
-Metric-by-Metric Evaluation
-
-Attention Envelope Analysis
-
-Temporal Flow Analysis
-
-Disruption Red Flags
-
-Visual Maps (ASCII or real charts)
-
-Success Criteria Summary
+✅ Step 0 must pass alignment, or overall journey cannot be rated as successful.
