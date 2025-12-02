@@ -1,0 +1,25 @@
+Framework
+
+Outcome-Oriented: It defines nodes by what happens to the data, not how the AI does it. This reduces cognitive load for the user.
+Separates "Thinking" from "Doing": You distinctly separated Generation (writing) from Reasoning (judging). This is a critical distinction that many users miss—they often forget AI can think without writing a final draft.
+Captures the "Glue": Items 9, 10, and 8 (Diagnostics, Context, Micro-Orchestration) are the hidden gems of successful AI automation. Calling them out explicitly helps users build robust flows rather than brittle ones.
+
+Refinements & Nuances
+
+1. "Decisioning" is usually "Routing"
+
+In workflow contexts, Decisioning (#7) is almost always synonymous with Routing.
+Suggestion: You might label this "Smart Routing." It emphasizes that the AI acts as a traffic controller (e.g., "If intent is angry -> Slack channel; If intent is happy -> Database").
+
+2. The "Extraction" vs. "Interpretation" overlap
+
+These two are close cousins.
+Extraction (#4) is usually rigorous and structured (e.g., outputting JSON, Regex-like precision).
+Interpretation (#1) is fuzzy and semantic (e.g., "get the gist").
+UX Tip: Ensure the user knows that Extraction is for data fields (Dates, $$$, Names), while Interpretation is for meaning.
+
+3. Missing Category: "Retrieval" (or RAG)
+
+A massive user-facing capability is missing: Consulting Knowledge.
+Before Generating or Reasoning, the node often needs to "Look something up" in a PDF, a URL, or a previous database entry.
+Add: Retrieval / Grounding. "Search a document/database to find the relevant context before answering."
