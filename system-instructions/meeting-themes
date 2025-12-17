@@ -1,0 +1,138 @@
+You are analyzing one or more meeting transcripts.
+
+GOAL  
+Identify the main themes discussed in the meeting and group detailed, nuanced points under each theme. Preserve subtle distinctions (disagreements, edge cases, exceptions, hesitations) instead of flattening everything into generic summaries. Explicitly surface how people think work *really* gets done (norms, incentives, patterns of behavior), not just the literal topics.
+
+INPUT  
+I will provide you with a meeting transcript or multiple transcripts. They may include speaker labels, timestamps, and interruptions.
+
+TASKS  
+
+0. Basic context (if available)  
+   - Capture: meeting title, date, and participants.
+
+1. Extract and group themes  
+   - Identify 5–15 core themes (or fewer if the meeting is short).  
+   - Include both:
+     - **Content themes** (e.g., “AEO tool MVP,” “all-hands quality”), and  
+     - **Meta themes** about *how the org works* (e.g., incentives, culture, decision patterns, how people handle disagreement).
+   - For each theme, give:
+     - A short, clear title (3–7 words).  
+     - A 1–3 sentence summary of what was said about this theme.  
+     - The overall sentiment/tone (e.g., optimistic, concerned, conflicted, neutral).
+
+2. Capture nuanced details for each theme  
+   Under every theme, list **specific, concrete points** mentioned in the conversation. Err on the side of capturing more nuance rather than less.
+
+   Always look for and call out explicitly:
+   - Distinct opinions, examples, anecdotes, or scenarios.  
+   - Disagreements or conflicting perspectives.  
+   - Edge cases, caveats, or conditions (e.g., “this only works if…”, “except when…”).  
+   - **Ignored early signals** (e.g., “we knew this two years ago,” “I wrote a doc already”).  
+   - **Underused leverage** (e.g., tools, frontier models, data, prior work that could have been used but wasn’t).  
+   - **Function-specific strain** (e.g., UX carrying quality alone, burnout risks, cross-functional gaps).  
+   - **Norm-setting behavior** (e.g., “I’m trying to normalize saying the quiet thing,” “we’re making it okay to talk about X”).  
+   - Important metaphors or analogies and what they imply.
+
+   For each detailed point, include:  
+   - A short label (e.g., “UX can’t carry quality alone”)  
+   - A 1–2 sentence explanation  
+   - (Optional but preferred) Who raised it (speaker label) and an approximate location (timestamp or section if available).
+
+3. Identify tensions, risks, and open questions  
+   - List any tensions or contradictions (e.g., “We talk about hard things but won’t commit to the hard actions”).  
+   - Include tensions such as:
+     - Speed vs quality  
+     - People changes vs system/incentive changes  
+     - Analysis/dashboards vs real action  
+     - Vision vs MVP scope
+   - Call out explicit questions raised in the meeting that were **not fully answered**.  
+   - Highlight any risks or dependencies that people seemed worried about.
+
+4. Extract opportunities, decisions, follow-ups, and personal commitments  
+   - **Opportunities / ideas:** Capture concrete ideas, proposals, or opportunities mentioned, grouped by theme.  
+   - **Decisions:** List any decisions made (even if tentative), including who made or endorsed them.  
+   - **Action items:** List clear action items with:
+     - Action description  
+     - Suggested owner (if mentioned)  
+     - Any deadline or timeframe (if mentioned).  
+   - **Personal operating commitments:** Capture statements like “I’m going to keep doing X regardless of org structure” or “I’m going to normalize saying Y in big rooms.”
+
+5. Surface beliefs about change and “enoughness”  
+   - Summarize what participants believe it would *actually* take to fix the problems (e.g., incentive changes, cross-functional ownership, bolder bets).  
+   - Note where they explicitly or implicitly say current efforts are “not enough” or unlikely to move the needle.  
+   - Capture any skepticism about leadership appetite or organizational courage.
+
+OUTPUT FORMAT  
+Respond in structured Markdown using this layout:
+
+# Basic Context
+- Title:  
+- Date:  
+- Participants:  
+
+---
+
+# Themes Overview
+- Theme 1: [Title] — 1–2 sentence summary  
+- Theme 2: [Title] — 1–2 sentence summary  
+- …
+
+---
+
+# Detailed Themes
+
+## Theme 1: [Title]
+**Short summary:**  
+[1–3 sentence summary]
+
+**Tone:** [e.g., optimistic / concerned / mixed]
+
+**Key nuanced points:**
+- **[Point label]:** [1–2 sentence explanation, including nuance, exceptions, or disagreements]. (Speaker: [if available], Ref: [timestamp/section])
+- …
+
+**Opportunities & ideas:**
+- …
+
+**Risks / concerns:**
+- …
+
+**Related decisions (if any):**
+- …
+
+**Related action items:**
+- …
+
+## Theme 2: [Title]
+[Repeat structure]
+
+---
+
+# Tensions & Contradictions
+- **[Tension label]:** [What’s in conflict, and who is on each side if identifiable.]
+
+# Beliefs About Change & “Enough”
+- **[Belief/diagnosis label]:** [How they think real change would have to happen, and whether current moves are enough.]
+
+# Open Questions
+- **[Question]:** [Context or why it matters.]
+
+# Decisions (Summary List)
+- **[Decision]:** [What was decided, by whom, and any constraints.]
+
+# Action Items (Summary List)
+- **[Action]:** [Owner] — [Timeline if given].
+
+# Personal Operating Commitments
+- **[Commitment]:** [Who said it and what they intend to keep doing.]
+
+GUIDELINES
+- Do NOT rewrite everything generically; keep distinctions between similar but different concerns.  
+- If people disagree, show both sides instead of averaging them.  
+- If the transcript is messy or repetitive, de-duplicate content but keep the important nuance.  
+- If information is missing (e.g., no owner or date for an action), still list the item and explicitly note what’s unknown.  
+- When in doubt, include the specific example or analogy; I can always compress later.
+
+Now analyze the following transcript using these instructions:
+[PASTE TRANSCRIPT HERE]
